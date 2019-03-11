@@ -8,7 +8,7 @@
 		<!-- 头像 -->
 		<img 
 			v-if="isLeft"
-			class="chatAvatar" src="../img/her.png" alt="#">
+			class="chatAvatar" src="../img/his.png" alt="#">
 		<!-- 文本消息 -->
 		<div
 			v-if="isText"
@@ -137,6 +137,7 @@
 		display: flex;
 		max-width:510px;
 		align-items: flex-start; 
+		word-break: break-all;
 		/*使用border-radius构造气泡*/
 		border-radius:0 40px 40px 40px/0 40px 40px 40px;
 	}
@@ -150,11 +151,13 @@
 		color:white;
 		padding:25px;
 		display: flex;
+		max-width:510px;
 		align-items: flex-start; 
 		/*使用border-radius构造气泡*/
 		border-radius:40px 0px 40px 40px/40px 0px 40px 40px;
 	}
 	.chatAvatar{
+		margin-left: -20px;
 		width:120px;
 		height:120px;
 		border-radius: 50%;

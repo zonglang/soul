@@ -122,12 +122,19 @@
 				flex-direction: row;
 				align-items: center;
 			}
-			.voiceStrip .strip div:nth-child(-n+12){
+			.voiceStrip.leftMessage .strip div:nth-child(-n+12){
 				width:4px;
-				height: 50%;
 				margin-left: 12px;
 				border-radius: 50px;
 				background-color: #25D4D0;
+				vertical-align: middle;
+				/*display: inline-block;*/
+			}
+			.voiceStrip.rightMessage .strip div:nth-child(-n+12){
+				width:4px;
+				margin-left: 12px;
+				border-radius: 50px;
+				background-color: white;
 				vertical-align: middle;
 				/*display: inline-block;*/
 			}
@@ -215,8 +222,14 @@
 				animation:yuying2 0.8s infinite 0.15s;
 			   -webkit-animation:yuying2 0.8s infinite 0.15s;
 			}
-			.voiceStrip .duration{
+			.voiceStrip.leftMessage .duration{
 				color:#25D4D0;
+				font-size: 30px;
+				margin: 0 40px;
+				padding:10px;
+			}
+			.voiceStrip.rightMessage .duration{
+				color:white;
 				font-size: 30px;
 				margin: 0 40px;
 				padding:10px;

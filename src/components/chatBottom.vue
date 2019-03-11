@@ -1,6 +1,6 @@
 <template>
 	<div class="chatBottom">
-		这是chatBottom
+		
 	</div>
 </template>
 
@@ -14,3 +14,11 @@
 		}
 	};
 </script>
+<style scoped>
+	.chatBottom{
+		width: 100%;
+		height: 100%;
+		background-image: url(../img/bottom.png);
+		background-size: 100% 100%;
+	}
+</style>
